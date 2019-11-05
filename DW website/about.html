@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta charset="utf-8">
+	
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+	
+<meta name="Keywords" content="Hemaharshini, Harshini, Web Developer, Full-Stack Developer">
+	
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no ">
+	
+<title>Hemaharshini Ragupathy</title>
+
+
+<link href="Style.css" rel="stylesheet" type="text/css">
+	
+<script src="js/modernizr.custom.js"></script>
+	
+<style>
+        *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+body {
+	background: #000000;
+	font-family: 'Lato', Arial, sans-serif;
+	color: #fff;
+}
+
+.wrapper {
+	margin: 0 auto 100px auto;
+	max-width: 960px;
+}
+
+.stage {
+	list-style: none;
+	padding: 0;
+}
+
+
+
+.scene {
+	width: 260px;
+	height: 400px;
+	margin: 30px;
+	float: left;
+	-webkit-perspective: 1000px;
+	-moz-perspective: 1000px;
+	perspective: 1000px;
+}
+
+.movie {
+	width: 260px;
+	height: 400px;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transform: translateZ(-130px);
+	-moz-transform: translateZ(-130px);
+	transform: translateZ(-130px);
+	-webkit-transition: -webkit-transform 350ms;
+	-moz-transition: -moz-transform 350ms;
+	transition: transform 350ms;
+}
+
+.movie:hover {
+	-webkit-transform: rotateY(-78deg) translateZ(20px);
+	-moz-transform: rotateY(-78deg) translateZ(20px);
+	transform: rotateY(-78deg) translateZ(20px);
+}
+
+.movie .poster, 
+.movie .info {
+	position: absolute;
+	width: 250px;
+	height: 250px;
+	background-color:#FFFFFF;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.movie .poster  {
+	-webkit-transform: translateZ(130px);
+	-moz-transform: translateZ(130px);
+	transform: translateZ(130px);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.movie .info {
+	-webkit-transform: rotateY(90deg) translateZ(130px);
+	-moz-transform: rotateY(90deg) translateZ(130px);
+	transform: rotateY(90deg) translateZ(130px);
+	border: 4px solid #fff;
+	font-size: 0.75em;
+}
+
+
+
+.csstransforms3d .movie::after {
+	content: '';
+	width: 260px;
+	height: 260px;
+	position: absolute;
+	bottom: 0;
+	box-shadow: 0 30px 50px rgba(0,0,0,0.3);
+	-webkit-transform-origin: 100% 100%;
+	-moz-transform-origin: 100% 100%;
+	transform-origin: 100% 100%;
+	-webkit-transform: rotateX(90deg) translateY(130px);
+	-moz-transform: rotateX(90deg) translateY(130px);
+	transform: rotateX(90deg) translateY(130px);
+	-webkit-transition: box-shadow 350ms;
+	-moz-transition: box-shadow 350ms;
+	transition: box-shadow 350ms;
+}
+
+.csstransforms3d .movie:hover::after {
+	box-shadow: 20px -5px 50px rgba(0,0,0,0.3);
+}
+
+
+.info p {
+	padding: 1.2em 1.4em;
+	margin: 28px 0 0;
+	font-weight: 700;
+	color: #000000;
+	line-height: 1.4em;
+	text-align: center;
+	font-style: oblique;
+	 
+}
+
+
+.movie .poster,
+.movie .info,
+.movie .info header {
+	-webkit-transition: box-shadow 350ms;
+	-moz-transition: box-shadow 350ms;
+	transition: box-shadow 350ms;
+}
+
+.csstransforms3d .movie .poster {
+	box-shadow: inset 0px 0px 40px rgba(255,255,255,0);
+}
+
+.csstransforms3d .movie:hover .poster {
+	box-shadow: inset 300px 0px 40px rgba(255,255,255,0.8);
+}
+
+.csstransforms3d .movie .info, 
+.csstransforms3d .movie .info header {
+	box-shadow: inset -300px 0px 40px rgba(0,0,0,0.5);
+}
+
+.csstransforms3d .movie:hover .info, 
+.csstransforms3d .movie:hover .info header {
+	box-shadow: inset 0px 0px 40px rgba(0,0,0,0);
+}
+
+
+.scene:nth-child(1) .movie .poster {
+  background-image: url("images/education.jpg");
+}
+	
+.scene:nth-child(2) .movie .poster {
+  background-image: url("images/work.png");
+}
+	
+
+.scene:nth-child(3) .movie .poster {
+  background-image: url(images/1.jpg);
+}
+
+.scene:nth-child(4) .poster {
+  background-image: url(images/2.jpg);
+}
+
+.scene:nth-child(5) .poster {
+  background-image: url(images/3.jpg);
+}
+	
+.scene:nth-child(6) .poster {
+  background-image: url("images/About_Icon.png");
+}
+
+
+
+.no-csstransforms3d .movie .poster, 
+.no-csstransforms3d .movie .info {
+	position:fixed;
+}
+
+
+@media screen and (max-width: 60.75em){
+	.scene {
+	float: right;
+	margin: auto auto auto;
+	}
+}
+	
+</style>	
+
+	
+	
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+
+	
+
+</head>
+
+<body>
+			
+<noscript id="gatsby-noscript">This app works best with JavaScript enabled.</noscript>
+	
+<header>
+	
+
+	<nav>
+  <p> <a href="index.html" class="navHome"> Home</a> 
+	  <a href="about.html" class="navabout">About</a> 
+	  <a href="contact.html" class="navContact">Contact</a></p>
+</nav>
+
+</header>
+	
+	<section class="sectionRight">
+		  
+  <h6 class="P"> A little about myself, I am a Web  Developer based in Toronto, Canada. An enthusiast with love for design, typography and pizza. Aside from all the good facts, I write code and improve my design and skills every day. There you go, one of the other good reason to hire me. To know more about my skills and experience please have a look below. </h6>
+</section>
+	
+	
+	
+	<div class="container">
+		<div class="wrapper">
+				<ul class="stage clearfix">
+					
+					
+					<li class="scene">
+						<div class="movie" onclick="return true">
+							<div class="poster"></div>
+							<div class="info">
+									 <img src="Images/edu.png" width="230" height="200" alt=""/>
+							</div>
+						</div>
+					</li>
+					
+		
+					<li class="scene">
+						<div class="movie" onclick="return true">
+							<div class="poster"></div>
+							<div class="info">
+								<img src="Images/cts.png" width="230" height="200" alt=""/>	
+							</div>
+						</div>
+					</li>
+					
+					
+					
+					<li class="scene">
+						<div class="movie" onclick="return true">
+							<div class="poster"></div>
+							<div class="info">
+									
+									<p> <strong>Programming Languages:</strong> <br>
+									Java <br>
+									Python <br>
+									C <br>
+									C++ <br> </p>
+								
+							</div>
+						</div>
+					</li>
+					
+
+					<li class="scene">
+						<div class="movie" onclick="return true">
+							<div class="poster"></div>
+							<div class="info">
+							
+									<p> Front End Technologies: <br>
+									HTML5 <br>
+									CSS3 <br>
+										React <br>
+										Angular <br>
+									Javascript <br>
+									Bootstrap <br> </p>
+									
+							</div>
+						</div>
+					</li>
+					
+					
+					
+
+					<li class="scene">
+						<div class="movie" onclick="return true">
+							<div class="poster"></div>
+							<div class="info">
+								
+									<p> Database: <br>
+									MySQL <br>
+									SQLite <br>
+									MongoDB <br>
+									Oracle <br> </p>
+									
+								
+							</div>
+						</div>
+					</li>
+					
+					
+					
+					<li class="scene">
+						<div class="movie" onclick="return true">
+							<div class="poster"></div>
+							<div class="info">
+								
+							
+									
+								<br> <br>
+								
+									<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  									Download<a href="Hemaharshini_Resume.pdf" target="_blank" class="fa fa-download fa-2x">
+									Resume</a>
+									
+								
+							</div>
+						</div>
+					</li>
+			
+					
+
+				</ul>
+			</div>
+				
+		</div>
+	
+<footer> Copyright 2019 by Hemaharshini Ragupathy. Made with 100% recycled pixels.</footer>	
+				
+		
+</body>
+
+				
+	
+	
+</html>
